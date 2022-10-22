@@ -1,0 +1,111 @@
+@import "./Header.css";
+@import "./Nav.css";
+@import "./Utility.css";
+
+
+/*Navbar imported from othe files*/
+
+/*Subscription*/
+.subscribe{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-height:15rem;
+  max-width: 70%;
+  background-color: rgb(255, 255, 255);
+  padding: 2.5rem;
+  opacity: 0.9;
+  border-radius: 5px;
+  background-color: rgb(243, 170, 86);
+  margin: auto;
+  margin-top: 2rem;
+
+}
+.msg{
+  letter-spacing: 1.5px;
+  font-size: 1.5rem;
+}
+.form__input{
+  border: 2px solid rgb(247, 181, 134);
+  border-radius: 3px;
+  outline: none;
+  padding: 1rem;
+  margin-bottom: 5px;
+  margin-top: 5px;
+ background-color: rgb(222, 240, 240);
+}
+
+.form__input:hover{
+  border-color: rgb(88, 144, 107);
+}
+.form__input:focus{
+  border-color: rgb(7, 188, 224);
+}
+
+.submit input{
+  padding: 3px 15px 3px ;
+  background: none;
+  border: 2px solid rgb(247, 181, 134);
+  outline: none;
+  background-color: rgb(222, 240, 240);
+}
+.submit input:hover{
+  border-color: rgb(7, 170, 56);
+}
+.submit input:focus{
+  border-color: rgb(62, 234, 234);
+}
+
+/*About*/
+.about__page{
+    display: flex;
+    justify-content: center;
+   padding: 2rem;
+    height: 40rem;
+    margin-top: 3rem;
+}
+.about__page h1 {
+  text-align: center;
+  font-size: 5rem;
+  
+}
+.about__page p{
+    text-align: center;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    line-height: 1.5;
+    font-size: 1.25rem;
+    margin-top: 5rem;
+}
+.profile.img{
+    width: 400px;
+    height: 400px;
+}
+
+
+
+/* media querry*/
+@media (max-width: 668px) {
+  
+  .nav__bar {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 2rem;
+  }
+  .social li a {
+    padding-top: 1.2rem;
+  }
+  .about__page {
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin:auto;
+  }
+  .head{
+    flex-direction: column;
+  }
+}

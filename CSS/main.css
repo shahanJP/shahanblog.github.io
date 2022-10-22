@@ -1,0 +1,360 @@
+@import "./Nav.css";
+@import "./Utility.css";
+@import "./Header.css";
+
+/*Navbar imported from other files*/
+html{
+  scroll-behavior: smooth;
+}
+
+
+  /*showcase banner*/
+.banner {
+  position: relative;
+  top: 0;
+  left: 0;
+  min-height: 30rem;
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  transition: 0.3s;
+}/*
+.banner video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}*/
+.banner h2 {
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  color: rgb(9, 16, 16);
+  z-index: 2;
+  font-size: 2em;
+  font-weight: bold;
+}
+.banner h5 {
+  color: rgb(22, 18, 18);
+  z-index: 3;
+  letter-spacing: 1.5px;
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+.banner p {
+  z-index: 2;
+  letter-spacing: 1.5px;
+  transition: all 1s ease-out;
+}
+.banner p:hover {
+  letter-spacing: 5px;
+  font-weight: 800;
+}
+.banner p a {
+  border: solid 3px rgb(243, 170, 86);
+  background: rgba(187, 171, 171, 0.416);
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  font-weight: 800;
+  border-radius: 5px;
+  text-transform: uppercase;
+  color: rgb(16, 0, 0);
+  z-index: 3;
+}
+
+
+  /*Section*/
+.section {
+  height: 30rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 7rem;
+}
+.section h1 {
+  font-size: 3rem;
+  transition: all 1s ease-out;
+}
+
+.section h1:hover {
+  letter-spacing: 5px;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(../images/tajjsuset.jpg);
+  background-position: center;
+  background-size: cover;
+  backdrop-filter: no-repeat;
+  height: 100%;
+  width: 96%;
+  margin-top: 1.2rem;
+  aspect-ratio: 2/1;
+  transition: all 1s ease-in-out;
+}
+
+.para {
+  width: 60%;
+  color: rgb(255, 255, 255);
+  font-size: 1.6rem;
+  font-weight: 900;
+  transition: all 1s ease-in-out;
+  z-index: 2;
+  justify-content: center;
+  align-items: center;
+  transition: all 3s ease-in-out;
+}
+.about a {
+  color: rgb(243, 170, 86);
+  font-size: 2rem;
+  font-weight: bolder;
+}
+.about:hover {
+  opacity: 0.5;
+}
+.container {
+  max-width: 100rem;
+  margin-inline: auto;
+  padding-inline: 2em;
+  margin-bottom: 15rem;
+}
+
+
+  /*Container*/
+.container h1 {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 3rem;
+  margin-bottom: 5rem;
+  transition: all 1s ease-out;
+}
+.container h1:hover {
+  letter-spacing: 5px;
+}
+.responsive {
+  display: grid;
+}
+
+.responsive > * {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 7rem;
+  margin-bottom: 7rem;
+}
+
+.card {
+  aspect-ratio: 1/1.5;
+  box-shadow: 0px 9px 17px 0px rgba(0, 0, 0, 0.75) ;
+}
+.card__content {
+  background: white;
+  align-self: end;
+  margin: 0.5rem;
+  padding: 5px;
+}
+
+.card__img {
+  max-width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+.card__description a {
+  color: rgb(196, 25, 133);
+}
+
+
+  /*Subscription*/
+.parralex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 7rem;
+  width: auto;
+  background-position: center;
+  background-size: cover;
+  backdrop-filter: no-repeat;
+  background-attachment: fixed;
+  background-image:url("../images/darktaj.jpg");
+  height: 30rem;
+}
+
+.subscribe {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  min-height: 60%;
+  background-color: rgb(255, 255, 255);
+  padding: 2.5rem;
+  opacity: 0.9;
+  border-radius: 5px;
+}
+.msg {
+  letter-spacing: 1.5px;
+  font-size: 1.5rem;
+}
+.form__input {
+  border: 2px solid rgb(247, 181, 134);
+  border-radius: 3px;
+  outline: none;
+  padding: 1rem;
+  transition: all 1s ease-in-out;
+}
+
+.form__input:hover {
+  border-color: rgb(7, 170, 56);
+}
+.form__input:focus {
+  border-color: rgb(62, 234, 234);
+}
+
+.submit input {
+  padding: 3px 15px 3px;
+  background: none;
+  border: 2px solid rgb(247, 181, 134);
+  outline: none;
+  transition: all 1s ease-in-out;
+}
+.submit input:hover {
+  border-color: rgb(7, 170, 56);
+}
+.submit input:focus {
+  border-color: rgb(62, 234, 234);
+}
+
+
+  /*Updates and info*/
+.press {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(247, 245, 242);
+  min-height: 20rem;
+ }
+.press h3 {
+  letter-spacing: 2px;
+  font-size: 2rem;
+}
+
+.press i {
+  font-size: 3rem;
+  color: rgb(247, 163, 112);
+}
+#top{
+  width:3rem;
+  height: 3rem;
+  text-align: center;
+}
+#top .fa-arrow-up{
+  width: 5px;
+  height: 1rem;
+  color: rgb(21, 21, 17);
+}
+
+  /*social links and address*/
+
+  .liked__blog {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 25% 75%;
+    grid-template-areas: "row1 row1"
+                         "row2 row2";
+    width: 100%; 
+    min-height: 15rem; 
+    background-color:rgb(247, 163, 112);   
+                 
+  }
+  .row1{
+    grid-area: row1;
+    width: 80%;
+    place-self: center;
+    text-align: center;
+    border-bottom:1px solid rgb(62, 55, 38);
+   letter-spacing: 1px;
+  }
+
+  .row2{
+    grid-area: row2;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+   
+  }
+  .liked{
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid rgb(62, 55, 38);
+    padding-left: 15px;
+    align-self: center;
+  }
+ 
+
+/*footer imported from other files*/
+
+
+
+  /*media querry*/
+
+@media (max-width: 668px) {
+  .header{
+    flex-direction: column;
+  }
+  .nav__bar {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 2rem;
+  }
+  .social li a {
+    padding-top: 1.2rem;
+  }
+
+  .section {
+    display: flex;
+    flex-direction: column;
+  }
+  .press {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 40rem;
+   
+  }
+  .bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 15rem;
+  }
+  .row2{
+    flex-direction: column;
+       }
+    .liked{
+      border-left:none;
+      border-bottom: 1px solid black;
+      
+       }
+       .head{
+        flex-direction: column;
+        margin-top: 1rem;
+      }
+}
